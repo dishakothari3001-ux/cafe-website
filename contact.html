@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Mist & Mocha Café</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            MIST <span>&</span> MOCHA
+            <small>CAFÉ</small>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">Our Story</a>
+            <a href="menu.html">Our Menu</a>
+            <a href="index.html#experience">Experience</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <a href="menu.html" class="nav-button">Explore Menu</a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+    </header>
+
+
+    <!-- PAGE HEADER -->
+    <section class="page-hero"
+             style="--hero-img: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1800')">
+        <p class="breadcrumb"><a href="index.html">HOME</a> / CONTACT</p>
+        <h1>Let's make it a <em>coffee date.</em></h1>
+        <p class="page-intro">
+            Drop by, say hello, or send us a message. We'd love to hear from you.
+        </p>
+    </section>
+
+
+    <!-- CONTACT CONTENT -->
+    <section class="contact-page">
+
+        <!-- INFO -->
+        <div class="contact-info">
+            <p class="section-label">FIND US</p>
+            <h2>Visit <em>Mist &amp; Mocha</em></h2>
+
+            <div class="contact-info-list">
+
+                <div class="info-card">
+                    <i class="fas fa-location-dot"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <!-- TODO: replace with your real address -->
+                        <p>Your street address here,<br>City, State, PIN</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Opening Hours</h3>
+                        <!-- TODO: replace with your real hours -->
+                        <p>Monday – Friday: 8:00 AM – 10:00 PM<br>
+                           Saturday – Sunday: 9:00 AM – 11:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer">+91 99999 99999</a></p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <!-- TODO: replace with your real email -->
+                        <p><a href="mailto:hello@mistandmocha.com">hello@mistandmocha.com</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- TODO: paste your Google Maps <iframe> embed here -->
+        </div>
+
+
+        <!-- FORM -->
+        <div class="contact-form-wrap">
+            <p class="section-label">SEND A MESSAGE</p>
+            <h2>We'd love to <em>hear from you.</em></h2>
+
+            <form class="contact-form" id="contactForm">
+
+                <div class="form-row">
+                    <div class="field">
+                        <label for="name">YOUR NAME</label>
+                        <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">PHONE (OPTIONAL)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+91 ...">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="subject">WHAT'S THIS ABOUT?</label>
+                    <select id="subject" name="subject">
+                        <option>Table reservation</option>
+                        <option>Birthday / party booking</option>
+                        <option>Feedback</option>
+                        <option>General enquiry</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="message">MESSAGE</label>
+                    <textarea id="message" name="message" placeholder="Tell us a little more..." required></textarea>
+                </div>
+
+                <button type="submit" class="primary-btn">
+                    Send via WhatsApp <i class="fab fa-whatsapp"></i>
+                </button>
+
+                <p class="form-note">
+                    This opens WhatsApp with your message ready to send.
+                </p>
+
+            </form>
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <a href="index.html" class="footer-logo">
+            MIST <span>&</span> MOCHA
+            <small>CAFÉ</small>
+        </a>
+
+        <p>A Little Escape in Every Sip.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">Our Story</a>
+            <a href="menu.html">Our Menu</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Mist & Mocha Café. All rights reserved.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
